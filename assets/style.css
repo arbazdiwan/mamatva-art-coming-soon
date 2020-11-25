@@ -1,0 +1,363 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #8b0707;
+}
+
+.cursor-point {
+  cursor: pointer;
+}
+
+.web-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.web-wrapper #main_header {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  z-index: 1;
+  -webkit-transition: top 0.5s 0s;
+  transition: top 0.5s 0s;
+}
+
+.web-wrapper #main_header .logo-wrapper {
+  position: absolute;
+  background-color: white;
+  content: "";
+  padding: 30px;
+  top: -40%;
+  left: 7.5%;
+  z-index: -1;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+@media (max-width: 1024px) {
+  .web-wrapper #main_header .logo-wrapper {
+    position: absolute;
+    background-color: white;
+    content: "";
+    padding: 30px;
+    top: -41%;
+    left: 2%;
+    z-index: -1;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .web-wrapper #main_header .logo-wrapper {
+    position: absolute;
+    background-color: white;
+    content: "";
+    padding: 30px;
+    top: -42%;
+    left: 2%;
+    z-index: -1;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+}
+
+@media (max-width: 425px) {
+  .web-wrapper #main_header .logo-wrapper {
+    position: absolute;
+    background-color: white;
+    content: "";
+    padding: 30px;
+    top: -42%;
+    left: 2%;
+    z-index: -1;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .web-wrapper #main_header {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index: 1;
+    -webkit-transition: top 0.5s 0s;
+    transition: top 0.5s 0s;
+  }
+}
+
+.web-wrapper .come-soon {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+.web-wrapper .come-soon .my-loder {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.web-wrapper .come-soon .rotating {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 2rem;
+  color: #351275;
+  -webkit-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: block;
+    list-style: none;
+  }
+}
+
+.navibar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  background-color: transparent;
+  -webkit-transition: visibility 0s 0.2s, background-color 0.5s 0s, height 1s 0s, -webkit-transform 0.5s 0s;
+  transition: visibility 0s 0.2s, background-color 0.5s 0s, height 1s 0s, -webkit-transform 0.5s 0s;
+  transition: transform 0.5s 0s, visibility 0s 0.2s, background-color 0.5s 0s, height 1s 0s;
+  transition: transform 0.5s 0s, visibility 0s 0.2s, background-color 0.5s 0s, height 1s 0s, -webkit-transform 0.5s 0s;
+  z-index: 1;
+}
+
+.my-logo {
+  height: 60px;
+  width: 60px;
+}
+
+#nav_Checkbox:checked ~ .navibar {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  background-color: white;
+  -webkit-transition: visibility 0.5s 0s, background-color 0.5s 0s, -webkit-transform 0.1s 0s;
+  transition: visibility 0.5s 0s, background-color 0.5s 0s, -webkit-transform 0.1s 0s;
+  transition: transform 0.1s 0s, visibility 0.5s 0s, background-color 0.5s 0s;
+  transition: transform 0.1s 0s, visibility 0.5s 0s, background-color 0.5s 0s, -webkit-transform 0.1s 0s;
+}
+
+@media (max-width: 768px) {
+  #nav_Checkbox:checked ~ .navibar {
+    visibility: visible;
+    -webkit-transform: translateY(15.75%);
+            transform: translateY(15.75%);
+    height: 75%;
+    background-color: white;
+    -webkit-transition: visibility 0.5s 0s, background-color 0.5s 0s, height 0.5s 0s, -webkit-transform 0.5s 0s;
+    transition: visibility 0.5s 0s, background-color 0.5s 0s, height 0.5s 0s, -webkit-transform 0.5s 0s;
+    transition: transform 0.5s 0s, visibility 0.5s 0s, background-color 0.5s 0s, height 0.5s 0s;
+    transition: transform 0.5s 0s, visibility 0.5s 0s, background-color 0.5s 0s, height 0.5s 0s, -webkit-transform 0.5s 0s;
+    text-align: center;
+  }
+}
+
+#nav_Checkbox:checked + #main_header {
+  top: 61px;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: top 0.5s 0s, background-color 0.5s 0s;
+  transition: top 0.5s 0s, background-color 0.5s 0s;
+}
+
+#nav_Checkbox:checked + #main_header .logo-wrapper {
+  position: absolute;
+  background-color: white;
+  content: "";
+  padding: 30px;
+  top: 0%;
+  left: 7.5%;
+  z-index: -1;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+@media (max-width: 1024px) {
+  #nav_Checkbox:checked + #main_header .logo-wrapper {
+    position: absolute;
+    background-color: white;
+    content: "";
+    padding: 30px;
+    top: -41%;
+    left: 2%;
+    z-index: -1;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+}
+
+@media (max-width: 768px) {
+  #nav_Checkbox:checked + #main_header .logo-wrapper {
+    position: absolute;
+    background-color: white;
+    content: "";
+    padding: 30px;
+    top: -42%;
+    left: 2%;
+    z-index: -1;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+}
+
+@media (max-width: 425px) {
+  #nav_Checkbox:checked + #main_header .logo-wrapper {
+    position: absolute;
+    background-color: white;
+    content: "";
+    padding: 30px;
+    top: -42%;
+    left: 2%;
+    z-index: -1;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+}
+
+@media (max-width: 1024px) {
+  #nav_Checkbox:checked + #main_header {
+    top: 55px;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-transition: top 0.5s 0s, background-color 0.5s 0s;
+    transition: top 0.5s 0s, background-color 0.5s 0s;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav_Checkbox:checked + #main_header {
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    -webkit-transition: top 0.5s 0s, background-color 0.5s 0s;
+    transition: top 0.5s 0s, background-color 0.5s 0s;
+  }
+}
+
+.nav-items {
+  padding: 10px;
+}
+
+.nav-items {
+  position: relative;
+}
+
+.nav-items .nav-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  -webkit-transition: all ease-in-out 2ms;
+  transition: all ease-in-out 2ms;
+}
+
+.nav-text {
+  color: #8b0707;
+  font-weight: 600;
+}
+
+.nav-link:hover ~ .nav-icon {
+  display: block;
+  font-size: 50px;
+  color: rgba(53, 18, 117, 0.2);
+}
+
+.come-soon div {
+  text-align: center;
+}
+
+.come-soon div p {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+@media (max-width: 1199px) {
+  .come-soon div p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .come-soon div p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .come-soon div p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .come-soon div p {
+    font-size: 1.25rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
