@@ -88,11 +88,46 @@
             <div class="rotating">
                 <span class="fa fa-spinner"></span>
             </div>
+            <!-- modal btn -->
+            <button type="button" class="btn border-secondary" data-toggle="modal" data-target="#joinusmodal">
+                Join Us
+            </button>
+            <!-- Modal -->
         </div>
         <!-- coming soon text end -->
     </div>
     <!-- Web-wrapper End -->
+    <!-- modal content -->
+    <div class="modal " id="joinusmodal" tabindex="1" aria-labelledby="joinusmodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="joinusmodalLabel">Join Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row mt-2">
+                            <div class="input-data">
+                                <input type="text" required>
+                                <div class="underline">
+                                </div>
+                                <label for="">Email Address</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Join now</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- bootstrap JS -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
